@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body {
+	background-color: hsl(26, 40%, 92%);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 3rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+main {
+	width: 500px;
+	height: 375px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 1rem;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.description {
+	padding: 1rem 1.2rem 0.5rem 0;
+	width: 100%;
+}
+
+.imageSection {
+	height: 375px;
+}
+
+.desktopImage {
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+}
+
+.mobileImage {
+	display: none;
+}
+
+.subTitle {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	color: hsl(228, 12%, 48%);
+	letter-spacing: 3px;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+.title {
+	font-family: 'Fraunces', serif;
+}
+
+.desc {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: hsl(228, 12%, 48%);
+	font-weight: 500;
+	line-height: 1.7;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.currentPrice {
+	font-family: 'Fraunces', serif;
+	font-size: 25px;
+	color: hsl(158, 36%, 37%);
+}
+
+.prevPrice {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	color: hsl(228, 12%, 48%);
+	font-weight: 500;
+}
+
+.btn {
+	width: 100%;
+	background-color: hsl(158, 36%, 37%);
+	color: #fff;
+	border: none;
+	padding: 0.75rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: hsl(156, 42%, 18%);
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		overflow: auto;
+	}
+
+	main {
+		flex-direction: column;
+		width: 350px;
+		height: auto;
+		gap: 0;
+	}
+
+	.imageSection {
+		height: 245px;
+	}
+
+	.desktopImage {
+		display: none;
+	}
+
+	.mobileImage {
+		display: block;
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+		padding-bottom: 0;
+		height: 245px;
+	}
+
+	.description {
+		width: 80%;
+	}
+}
